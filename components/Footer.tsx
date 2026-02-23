@@ -5,92 +5,91 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-24">
-      <div className="padding-container max-container flex w-full flex-col gap-14">
-        <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
-          <Link href="/" className="mb-10">
-            <Image
-              src="/MainLogo.png"   // ✅ added leading slash (important in Next.js)
-              alt="logo"
-              width={74}
-              height={29}
-            />
-          </Link>
+    <footer className="w-full bg-gray-900 text-gray-300">
+      <div className="max-container padding-container py-14">
+        
+        {/* Top Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 items-start">
+          
+          {/* Logo + Short About */}
+          <div>
+            <Link href="/">
+              <Image
+                src="/MainLogo.png"
+                alt="Petals Landscape Logo"
+                width={120}
+                height={40}
+                className="mb-4"
+              />
+            </Link>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Professional landscaping solutions designed to transform
+              your outdoor spaces with beauty and functionality.
+            </p>
+          </div>
 
-          <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
-            
-            {/* Footer Links */}
-            {FOOTER_LINKS.map((column) => (
-              <FooterColumn
-                key={column.title}   // ✅ added missing key
-                title={column.title}
-              >
-                <ul className="regular-14 flex flex-col gap-4 text-gray-30">
-                  {column.links.map((link, index) => (
-                    <li key={`${column.title}-${index}`}>
-                      <Link href="/">{link}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </FooterColumn>
-            ))}
-
-            {/* Contact Info */}
-            <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-              {FOOTER_CONTACT_INFO.links.map((item, index) => (
-                <Link
-                  href="/"
-                  key={`${item.label}-${index}`}  // ✅ safer key
-                  className="flex gap-4 md:flex-col lg:flex-row"
-                >
-                  <p className="whitespace-nowrap">
-                    {item.label}:
-                  </p>
-                  <p className="medium-14 whitespace-nowrap text-blue-70">
-                    {item.value}
-                  </p>
-                </Link>
-              ))}
-            </FooterColumn>
-
-            {/* Social Links */}
-            <FooterColumn title={SOCIALS.title}>
-              <ul className="regular-14 flex gap-4 text-gray-30">
-                {SOCIALS.links.map((link, index) => (
-                  <li key={index}>
-                    <Link href="/">
-                      {/* Uncomment if needed */}
-                      {/* <Image src={link} alt="social icon" width={24} height={24} /> */}
+          {/* Footer Links */}
+          {FOOTER_LINKS.map((column) => (
+            <div key={column.title}>
+              <h4 className="text-white font-semibold mb-4">
+                {column.title}
+              </h4>
+              <ul className="space-y-2 text-sm">
+                {column.links.map((link, index) => (
+                  <li key={`${column.title}-${index}`}>
+                    <Link
+                      href="/"
+                      className="hover:text-green-400 transition"
+                    >
+                      {link}
                     </Link>
                   </li>
                 ))}
               </ul>
-            </FooterColumn>
+            </div>
+          ))}
 
+          {/* Contact + Social */}
+          <div>
+            <h4 className="text-white font-semibold mb-4">
+              {FOOTER_CONTACT_INFO.title}
+            </h4>
+
+            <ul className="space-y-2 text-sm mb-6">
+              {FOOTER_CONTACT_INFO.links.map((item, index) => (
+                <li key={`${item.label}-${index}`}>
+                  <span className="font-medium text-gray-200">
+                    {item.label}:{" "}
+                  </span>
+                  <span className="text-gray-400">
+                    {item.value}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
+            <h4 className="text-white font-semibold mb-3">
+              {SOCIALS.title}
+            </h4>
+            <div className="flex gap-4">
+              {SOCIALS.links.map((link, index) => (
+                <Link key={index} href="/">
+                  {/* If you have icons */}
+                  {/* <Image src={link} alt="social" width={20} height={20} /> */}
+                  <div className="w-8 h-8 bg-gray-700 rounded-full hover:bg-green-500 transition" />
+                </Link>
+              ))}
+            </div>
           </div>
+
         </div>
 
-        <div className="border bg-gray-20" />
-
-        <p className="regular-14 w-full text-center text-gray-30">
-          2026 Petals Landscape | All rights reserved
-        </p>
+        {/* Divider */}
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} Petals Landscape. All rights reserved.
+        </div>
       </div>
     </footer>
-  );
-};
-
-type FooterColumnProps = {
-  title: string;
-  children: React.ReactNode;
-};
-
-const FooterColumn = ({ title, children }: FooterColumnProps) => {
-  return (
-    <div className="flex flex-col gap-5">
-      <h4 className="bold-18 whitespace-nowrap">{title}</h4>
-      {children}
-    </div>
   );
 };
 

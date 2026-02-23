@@ -63,7 +63,7 @@ export const FOOTER_LINKS = [
   },
   {
     title: 'Our Community',
-    links: ['Onspot technical', 'HomeServe', 'etc'],
+    links: ['On Spot Technical Services LLC ', 'Homeserve Building Materials Trading LLC', 'Bella Italo restaurant LLC','De Buurt restaurant LLC'],
   },
 ];
 
