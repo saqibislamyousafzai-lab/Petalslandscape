@@ -3,16 +3,52 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "Dubai Industrial City-Head office",
-    image: "/projects/dichq/dic-1.jpeg",
+    title: "Dubai Industrial City Head office - Jogging track ",
+    image: "/projects/dichq/dic-2.jpeg",
     logo: "/clients/client DIC.png",
     link: "/Projects/dichq",
+  },
+  {
+    title: "Dubai Industrial City Head office -Pergola Design",
+    image: "/projects/dicpergola/dicp-1.jpeg",
+    logo: "/clients/client DIC.png",
+    link: "/Projects/dicpergola",
+  },
+   {
+    title: "Dubai Industrial City Head office -Main Entrance Design",
+    image: "/projects/dicentrance/dice-2.jpeg",
+    logo: "/clients/client DIC.png",
+    link: "/Projects/dicentrance",
+  },
+   {
+    title: "Dubai Industrial City Head office -New Planters Design",
+    image: "/projects/dicplanters/dicp-3.jpeg",
+    logo: "/clients/client DIC.png",
+    link: "/Projects/dicplanters",
   },
    {
     title: "Jumeirah Bay-Villa CR7",
     image: "/projects/villacr7/cr71.jpeg",
     logo: "/clients/cr7logo.jpg", 
     link: "/Projects/villa-cr7",
+  },
+   {
+    title: "Meydan Villa - Back Garden Design and Swimming Pool",
+    image: "/projects/meydanvilla/med3.jpeg",
+    logo: "/clients/meydan.png", 
+    link: "/Projects/meydanvilla",
+  },
+   {
+    title: "Dubai International Academic city -  Water Feature Construction",
+    image: "/projects/diacwf/diacwf9.jpeg",
+    logo: "/clients/DIAC logo.jpg", 
+    link: "/Projects/diacwf",
+  },
+  {
+    title: "Dubai International Academic city -  Seating Area Construction",
+    image: "/projects/diacs/diacs1.jpeg",
+    logo: "/clients/DIAC logo.jpg", 
+    link: "/Projects/diacs",
   },
 ];
 
@@ -61,11 +97,20 @@ export default function ProjectsPage() {
                 </div>
 
                 {/* Title */}
-                <div className="p-4">
-                  <h3 className="text-base font-semibold">
-                    {project.title}
-                  </h3>
-                </div>
+              {/* Title */}
+<div className="p-4 space-y-2">
+
+  {/* Client Name */}
+  <h3 className="text-base font-semibold text-gray-900 leading-snug">
+    {project.title.split("-")[0]}
+  </h3>
+
+  {/* Project Name Badge */}
+  <span className="inline-block text-xs font-semibold bg-black text-white px-3 py-1 rounded-full tracking-wide">
+    {project.title.split("-")[1]}
+  </span>
+
+</div>
 
               </div>
 

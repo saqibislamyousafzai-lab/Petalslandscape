@@ -9,8 +9,12 @@ import Button from "./Button";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // 👉 CHANGE TO YOUR WHATSAPP NUMBER (without + or spaces)
+  const whatsappNumber = "+971588431763";
+
   return (
     <nav className="relative flexBetween max-container padding-container top-0 z-30 py-5 bg-white">
+      
       {/* Logo */}
       <Link href="/">
         <Image src="/Mainlogo.png" alt="logo" width={90} height={60} />
@@ -29,14 +33,20 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Desktop Button */}
-      <div className="lg:flexCenter hidden">
-        <Button
-          type="button"
-          title="Get a Quote"
-          icon="/quotation.png"
-          variant="btn_dark_green"
-        />
+      {/* Desktop WhatsApp Button */}
+      <div className="hidden lg:flex">
+        <a
+          href={`https://wa.me/${whatsappNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            type="button"
+            title="Get a Quote"
+            // icon="/whatsapp.png"
+            variant="btn_dark_green"
+          />
+        </a>
       </div>
 
       {/* Mobile Hamburger */}
@@ -50,6 +60,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 right-0 w-full bg-gray-900 flex flex-col items-center gap-6 py-6 lg:hidden z-50">
+          
           {NAV_LINKS.map((link) => (
             <Link
               key={link.key}
@@ -61,12 +72,20 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Button
-            type="button"
-            title="Get a Quote"
-            icon="/quotation.png"
-            variant="btn_dark_green"
-          />
+          {/* WhatsApp Button in Mobile */}
+          <a
+            href={`https://wa.me/${whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              type="button"
+              title="Get a Quote"
+              icon="/whatsapp.png"
+              variant="btn_dark_green"
+            />
+          </a>
+
         </div>
       )}
     </nav>
