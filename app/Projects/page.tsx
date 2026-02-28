@@ -41,13 +41,13 @@ const projects = [
    {
     title: "Dubai International Academic city -  Water Feature Construction",
     image: "/projects/diacwf/diacwf9.jpeg",
-    logo: "/clients/DIAC logo.jpg", 
+     logo: "/clients/DIAC_logo.jpg",  
     link: "/Projects/diacwf",
   },
   {
     title: "Dubai International Academic city -  Seating Area Construction",
     image: "/projects/diacs/diacs1.jpeg",
-    logo: "/clients/DIAC logo.jpg", 
+    logo: "/clients/DIAC_logo.jpg", 
     link: "/Projects/diacs",
   },
 ];
