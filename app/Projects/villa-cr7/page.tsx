@@ -9,46 +9,52 @@ export default function VillaCR7() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20">
       <div className="max-container padding-container">
         
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="bold-40 lg:text-6xl">
-            Villa CR7
-          </h1>
+        {/* Main Heading */}
+        <h1 className="bold-40 mb-6">
+          Villa CR7 – Indoor & Outdoor Plant Maintenance | Jumeirah Bay Dubai
+        </h1>
 
-          <p className="regular-16 text-gray-500 mt-6 max-w-2xl mx-auto">
-            A premium residential landscaping project designed to create
-            a modern outdoor living experience with elegance and comfort.
-          </p>
-        </div>
+        {/* SEO Optimized Description */}
+        <p className="regular-16 text-gray-30 mb-6 max-w-3xl">
+          This premium residential project at Villa CR7 in Jumeirah Bay 
+          involves comprehensive indoor and outdoor plant maintenance 
+          services. The objective is to preserve the elegance and natural 
+          beauty of the villa’s landscape while maintaining a healthy and 
+          vibrant green environment.
+        </p>
 
-        {/* Gallery Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <p className="regular-16 text-gray-30 mb-12 max-w-3xl">
+          Our scope of work includes maintenance of small and premium indoor 
+          decorative plants, outdoor ornamental shrubs, and landscaped garden 
+          areas. Services include scheduled watering, pruning, fertilization, 
+          pest control treatment, soil improvement, plant replacement planning, 
+          and seasonal care. Special attention is given to maintaining luxury 
+          plant arrangements that complement the villa’s modern architectural 
+          style. This project reflects our expertise in high-end villa landscape 
+          maintenance and plant care services in Dubai, particularly in 
+          exclusive communities like Jumeirah Bay.
+        </p>
+
+        {/* Image Grid */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {images.map((img, index) => (
-            <div
+            <Image
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-500"
-            >
-              <Image
-                src={img}
-                alt={`Villa CR7 ${index + 1}`}
-                width={600}
-                height={500}
-                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-
-              {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 flex items-center justify-center">
-                <span className="text-white opacity-0 group-hover:opacity-100 transition duration-500 font-semibold">
-                  View Image
-                </span>
-              </div>
-            </div>
+              src={img}
+              alt={`Indoor and outdoor plant maintenance at Villa CR7 Jumeirah Bay Dubai - Image ${index + 1}`}
+              width={600}
+              height={450}
+              priority={index === 0}
+              sizes="(max-width: 640px) 100vw,
+                     (max-width: 1024px) 50vw,
+                     33vw"
+              className="w-full h-60 object-cover rounded-xl"
+            />
           ))}
         </div>
-
       </div>
     </section>
   );
