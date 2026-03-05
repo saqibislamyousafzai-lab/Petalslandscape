@@ -53,26 +53,108 @@ const projects = [
   {
     title: "Al Barsha Dubai -  Villa Swimming Pool Constructiom",
     image: "/projects/barshavilla/br6.jpg",
-    logo: "/clients/diaclogo.jpg", 
+    logo: "/clients/ab.png", 
     link: "/Projects/barshaSw",
   },
    {
     title: "Boutique Villa Dubai -  Landscape and hardscape emhancment",
     image: "/projects/Bvilla/btvilla2.jpg",
-    logo: "/clients/diaclogo.jpg", 
+    logo: "/clients/bv.jpg", 
     link: "/Projects/bvilla",
   },
   {
     title: "Damac Hills -  Swimming Pool and landscape Construction",
     image: "/projects/DamacHills/dh (4).jpg",
-    logo: "/clients/diaclogo.jpg", 
+    logo: "/clients/dh.png", 
     link: "/Projects/damachills",
   },
   {
     title: "Etisalat Head office Dubai -  Landscape Maintainence",
     image: "/projects/Etisalatho/etislat (2).jpg",
-    logo: "/clients/diaclogo.jpg", 
+    logo: "/clients/etisalat.jpg", 
     link: "/Projects/etisalat",
+  },
+   {
+    title: "International City Dubai -  Landscape Maintainence and water Feature Construction",
+    image: "/projects/ic2/ic (2).jpg",
+    logo: "/clients/ic.jpeg", 
+    link: "/Projects/ic2",
+  },
+  {
+    title: "Dubai Industrial City-  Landscape Maintainence",
+    image: "/projects/diroad/diroad (2).jpg",
+    logo: "/clients/client DIC.png", 
+    link: "/Projects/diroad",
+  },
+   {
+    title: "Palm Golden Miles-  Landscape Maintainence",
+    image: "/projects/palmgolden/palmmile (1).jpg",
+    logo: "/clients/PJ.png", 
+    link: "/Projects/palmgolden",
+  },
+  {
+    title: "Living Legends Dubai -  Landscape Contruction, Planters Constructions and Seating Area",
+    image: "/projects/livleg/livleg (1).jpg",
+    logo: "/clients/ll.png", 
+    link: "/Projects/livleg",
+  },
+
+  {
+    title: "Muhammad Bin Rashid City -  Swimming Pool Construction , Landscape Contruction",
+    image: "/projects/MBR/mbr (8).jpg",
+    logo: "/clients/mrb.jpg", 
+    link: "/Projects/mbr",
+  },
+  
+  {
+    title: "Dubai Hills Estate -  Swimming Pool Construction , Landscape Contruction",
+    image: "/projects/dhe/dhe (1).jpg",
+    logo: "/clients/dh.png", 
+    link: "/Projects/dhe",
+  },
+  {
+    title: "Palm club Vista - Landscape Maintainence",
+    image: "/projects/pcv/pcv (4).jpg",
+    logo: "/clients/PJ.png", 
+    link: "/Projects/pcv",
+  },
+   {
+    title: "Falcon city - Swimmiing Pool Construction",
+    image: "/projects/FalconCity/fc (6).jpg",
+    logo: "/clients/fc.jpg", 
+    link: "/Projects/falconcity",
+  },
+  {
+    title: "St Regis Hotel Palm Jumeirah - Complete landscape Installation",
+    image: "/projects/Regisdubai/regdubai (6).jpg",
+    logo: "/clients/pj.png", 
+    link: "/Projects/regdubai",
+  },
+  {
+    title: "Dubai Studio City - Complete landscape Installation",
+    image: "/projects/DSC/dsc (2).jpg",
+    logo: "/clients/dsc.png", 
+    link: "/Projects/DSC",
+  }, 
+
+  {
+    title: "Dubai Industrial City Labour Village 2 - Complete landscape Installation, Hardscape Installation , Seating , pergola Installation",
+    image: "/projects/DI_LV2/lv2 (2).jpg",
+    logo: "/clients/client DIC.png", 
+    link: "/Projects/lv2",
+  },
+  {
+    title: "Souk Al Marfa - landscape Maintainence",
+    image: "/projects/marfa/marfa (2).jpg",
+    logo: "/clients/sm.png", 
+    link: "/Projects/marfa",
+  },
+
+  {
+    title: "Souk Al Marfa 3 - Indoor Plants Maintainence",
+    image: "/projects/Marfa3/marfa3 (2).jpg",
+    logo: "/clients/sm.png", 
+    link: "/Projects/marfa3",
   },
 ];
 
