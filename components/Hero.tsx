@@ -13,7 +13,7 @@ const heroImages: string[] = [
 const Hero = () => {
   const [current, setCurrent] = useState<number>(0)
 
-  const whatsappNumber = "971501234567"
+  const whatsappNumber = "971588431763"
 
   useEffect(() => {
     const interval = setInterval(() => {

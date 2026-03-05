@@ -20,7 +20,7 @@ export default function Diacs() {
         
         {/* Main Heading */}
         <h1 className="bold-40 mb-6">
-          Entrance Area Upgradation with Seating & Shaded Structure – Dubai International Academic City
+          Pocket Park Construction – Dubai International Academic City
         </h1>
 
         {/* SEO Optimized Description */}

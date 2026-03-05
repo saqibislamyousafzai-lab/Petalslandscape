@@ -45,10 +45,34 @@ const projects = [
     link: "/Projects/diacwf",
   },
   {
-    title: "Dubai International Academic city -  Seating Area Construction",
+    title: "Dubai International Academic city -  Pocket Park Construction",
     image: "/projects/diacs/diacs1.jpeg",
     logo: "/clients/diaclogo.jpg", 
     link: "/Projects/diacs",
+  },
+  {
+    title: "Al Barsha Dubai -  Villa Swimming Pool Constructiom",
+    image: "/projects/barshavilla/br6.jpg",
+    logo: "/clients/diaclogo.jpg", 
+    link: "/Projects/barshaSw",
+  },
+   {
+    title: "Boutique Villa Dubai -  Landscape and hardscape emhancment",
+    image: "/projects/Bvilla/btvilla2.jpg",
+    logo: "/clients/diaclogo.jpg", 
+    link: "/Projects/bvilla",
+  },
+  {
+    title: "Damac Hills -  Swimming Pool and landscape Construction",
+    image: "/projects/DamacHills/dh (4).jpg",
+    logo: "/clients/diaclogo.jpg", 
+    link: "/Projects/damachills",
+  },
+  {
+    title: "Etisalat Head office Dubai -  Landscape Maintainence",
+    image: "/projects/Etisalatho/etislat (2).jpg",
+    logo: "/clients/diaclogo.jpg", 
+    link: "/Projects/etisalat",
   },
 ];
 
