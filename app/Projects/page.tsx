@@ -76,7 +76,7 @@ const projects = [
   },
    {
     title: "International City Dubai -  Landscape Maintainence and water Feature Construction",
-    image: "/projects/ic2/ic5.jpg",
+    image: "/projects/IC2/ic5.jpg",
     logo: "/clients/ic.jpeg", 
     link: "/Projects/ic2",
   },
@@ -88,7 +88,7 @@ const projects = [
   },
    {
     title: "Palm Golden Miles-  Landscape Maintainence",
-    image: "/projects/palmgolden/palmmile3.jpg",
+    image: "/projects/Palmgolden/palmmile3.jpg",
     logo: "/clients/PJ.png", 
     link: "/Projects/palmgolden",
   },
