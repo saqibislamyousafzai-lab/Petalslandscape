@@ -10,14 +10,14 @@ export const metadata: Metadata = {
 
 export default function palmgolden() {
   const images = [
-    "/projects/palmgolden/palmmile (1).jpg",
-    "/projects/palmgolden/palmmile (2).jpg",
-    "/projects/palmgolden/palmmile (3).jpg",
-    "/projects/palmgolden/palmmile (4).jpg",
-    "/projects/palmgolden/palmmile (5).jpg",
-    "/projects/palmgolden/palmmile (6).jpg",
-    "/projects/palmgolden/palmmile (7).jpg",
-    "/projects/palmgolden/palmmile (8).jpg",
+    "/projects/palmgolden/palmmile1.jpg",
+    "/projects/palmgolden/palmmile2.jpg",
+    "/projects/palmgolden/palmmile3.jpg",
+    "/projects/palmgolden/palmmile4.jpg",
+    "/projects/palmgolden/palmmile5.jpg",
+    "/projects/palmgolden/palmmile6.jpg",
+    "/projects/palmgolden/palmmile7.jpg",
+    "/projects/palmgolden/palmmile8.jpg",
   ];
 
   return (

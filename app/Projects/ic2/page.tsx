@@ -10,12 +10,12 @@ export const metadata: Metadata = {
 
 export default function damachills() {
   const images = [
-    "/projects/ic2/ic (1).jpg",
-     "/projects/ic2/ic (2).jpg",
-      "/projects/ic2/ic (3).jpg",
-       "/projects/ic2/ic (4).jpg",
-        "/projects/ic2/ic (5).jpg",
-         "/projects/ic2/ic (6).jpg",
+    "/projects/ic2/ic1.jpg",
+     "/projects/ic2/ic2.jpg",
+      "/projects/ic2/ic3.jpg",
+       "/projects/ic2/ic4.jpg",
+        "/projects/ic2/ic5.jpg",
+         "/projects/ic2/ic6.jpg",
    
   ];
 
