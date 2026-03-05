@@ -76,7 +76,7 @@ const projects = [
   },
    {
     title: "International City Dubai -  Landscape Maintainence and water Feature Construction",
-    image: "/projects/ic2/ic (2).jpg",
+    image: "/projects/ic2/ic (1).jpg",
     logo: "/clients/ic.jpeg", 
     link: "/Projects/ic2",
   },
@@ -88,7 +88,7 @@ const projects = [
   },
    {
     title: "Palm Golden Miles-  Landscape Maintainence",
-    image: "/projects/palmgolden/palmmile (1).jpg",
+    image: "/projects/palmgolden/palmmile (5).jpg",
     logo: "/clients/PJ.png", 
     link: "/Projects/palmgolden",
   },
@@ -109,7 +109,7 @@ const projects = [
   {
     title: "Dubai Hills Estate -  Swimming Pool Construction , Landscape Contruction",
     image: "/projects/dhe/dhe (1).jpg",
-    logo: "/clients/dh.png", 
+    logo: "/clients/emar.jpg", 
     link: "/Projects/dhe",
   },
   {
@@ -120,7 +120,7 @@ const projects = [
   },
    {
     title: "Falcon city - Swimmiing Pool Construction",
-    image: "/projects/FalconCity/fc (6).jpg",
+    image: "/projects/FalconCity/fc (7).jpg",
     logo: "/clients/fc.jpg", 
     link: "/Projects/falconcity",
   },
