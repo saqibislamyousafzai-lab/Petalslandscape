@@ -9,8 +9,13 @@ import Button from "./Button";
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // 👉 CHANGE TO YOUR WHATSAPP NUMBER (without + or spaces)
-  const whatsappNumber = "+971588431763";
+  // WhatsApp number (without +)
+  const whatsappNumber = "971588431763";
+
+  // Default WhatsApp message
+  const whatsappMessage = encodeURIComponent(
+    "Hello, I found Petals Landscape and Gardening LLC online. I would like to get a quote for landscaping or gardening services in Dubai. Please share more details."
+  );
 
   return (
     <nav className="relative flexBetween max-container padding-container top-0 z-30 py-5 bg-white">
@@ -26,7 +31,7 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            className="regular-16 text-gray-800 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
           >
             {link.label}
           </Link>
@@ -36,14 +41,13 @@ const Navbar = () => {
       {/* Desktop WhatsApp Button */}
       <div className="hidden lg:flex">
         <a
-          href={`https://wa.me/${whatsappNumber}`}
+          href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Button
             type="button"
             title="Get a Quote"
-            // icon="/whatsapp.png"
             variant="btn_dark_green"
           />
         </a>
@@ -72,9 +76,9 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* WhatsApp Button in Mobile */}
+          {/* Mobile WhatsApp Button */}
           <a
-            href={`https://wa.me/${whatsappNumber}`}
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
           >

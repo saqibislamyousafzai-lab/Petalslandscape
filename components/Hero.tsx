@@ -15,6 +15,10 @@ const Hero = () => {
 
   const whatsappNumber = "971588431763"
 
+  const whatsappMessage = encodeURIComponent(
+    "Hello, I found Petals Landscape and Gardening LLC online. I would like to get a quote for landscaping or gardening services in Dubai. Please share more details."
+  )
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % heroImages.length)
@@ -31,7 +35,7 @@ const Hero = () => {
       {/* LEFT CONTENT */}
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
 
-        {/* Premium Mobile Heading */}
+        {/* Heading */}
         <h1 className="font-bold text-3xl leading-tight sm:text-4xl lg:text-6xl">
           Professional Landscape and Gardening Services in Dubai
         </h1>
@@ -41,13 +45,13 @@ const Hero = () => {
         </h2>
 
         <p className="mt-6 text-gray-600 text-sm sm:text-base xl:max-w-[520px] leading-relaxed">
-          Petals Landscape specializes in premium landscape design, garden 
-          landscaping, villa landscaping, irrigation systems, pergola installation, 
+          Petals Landscape specializes in premium landscape design, garden
+          landscaping, villa landscaping, irrigation systems, pergola installation,
           outdoor lighting, and complete gardening maintenance services.
         </p>
 
         <p className="mt-4 text-gray-600 text-sm sm:text-base xl:max-w-[520px] leading-relaxed">
-          We design and build elegant outdoor environments for villas, 
+          We design and build elegant outdoor environments for villas,
           commercial spaces, and luxury developments across Dubai.
         </p>
 
@@ -55,7 +59,7 @@ const Hero = () => {
         <div className="mt-8 flex items-center gap-4 flex-wrap">
           <div className="flex items-center gap-1">
             {Array(5).fill(1).map((_, index) => (
-              <Image 
+              <Image
                 src="/star.svg"
                 key={index}
                 alt="5 star landscape service rating"
@@ -77,24 +81,25 @@ const Hero = () => {
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
 
           <a
-            href={`https://wa.me/${whatsappNumber}?text=Hello%20I%20am%20interested%20in%20your%20landscape%20and%20gardening%20services`}
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto"
           >
-            <Button 
-              type="button" 
-              title="GET IN TOUCH" 
-              variant="btn_green" 
+            <Button
+              type="button"
+              title="GET IN TOUCH"
+              variant="btn_green"
             />
           </a>
 
-          <Button 
-            type="button" 
-            title="How we work?" 
+          <Button
+            type="button"
+            title="How we work?"
             icon="/play.svg"
-            variant="btn_white_text" 
+            variant="btn_white_text"
           />
+
         </div>
       </div>
 
